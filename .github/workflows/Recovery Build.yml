@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/rreskymesah/twrp-device-tree-emerald-poco-m6-pro-4g-redmi-note-13-pro-4g.git'
+        default: 'https://github.com/senyaml/recovery_device_xiaomi_emerald.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -36,7 +36,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_emerald'
+        default: 'fox_emerald'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -101,7 +101,7 @@ jobs:
     - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
       with:
-        swap-size-gb: 12
+        swap-size-gb: 20
 
     - name: Building recovery
       run: |
